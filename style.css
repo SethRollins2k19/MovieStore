@@ -1,0 +1,166 @@
+body {
+	color: #323232;
+}
+.wrapper {
+	width: 100%;
+}
+.header-wrapper{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 28px 0px;
+	border: 1px solid black;
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+.navigation{
+	width: 35%;
+}
+.nav-menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.profile {
+	display: flex;
+	align-items: center;
+}
+.profile * {
+	margin-right: 10px; 
+}
+
+.menu-item{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.menu-item:hover .menu-icon, .profile-item:hover .menu-icon {
+	fill:rgb(87, 92, 103);
+}
+.menu-item:hover.menu-item:first-child::after{
+	content: "comics";
+}
+.menu-item:hover.menu-item:nth-of-type(2)::after{
+	content: "movie";
+}
+.menu-item:hover.menu-item:nth-of-type(3)::after{
+	content: "video";
+}
+.menu-item:hover.menu-item:nth-of-type(4)::after{
+	content: "game";
+}
+.menu-item:hover.menu-item:nth-of-type(5)::after{
+	content: "tv";
+}
+.menu-item:hover.menu-item:nth-of-type(6)::after{
+	content: "more";
+}
+
+/*
+.menu-item:hover.menu-item:first-of-type::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "comics";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item:nth-of-type(2)::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "movie";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item:nth-of-type(3)::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "video";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item:nth-of-type(4)::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "game";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item:nth-of-type(5)::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "tv";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item:nth-of-type(6)::after{
+	position: absolute;
+	padding: 5px 13px;
+	padding-top: 4px;
+	content: "more";
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}*/
+.menu-item:hover.menu-item::after{
+	position: absolute;
+	text-align: center;
+	padding: 5px 0px;
+	width: 70px;
+	padding-top: 4px;
+	color: #fffff0;
+	font-weight: 600;
+	border-radius: 5px;
+	background: red;	
+	margin-top: 50px;
+	margin-left: -25px;
+}
+.menu-item:hover.menu-item::before{
+	position: absolute;
+	content: " ";
+	border: 8px solid transparent;
+	border-bottom: 8px solid red;
+	margin-top: 30px;
+	margin-left: 3px;
+}
+.slider{
+	width: 100%;
+	max-width: 1200px;
+	/*min-height: 500px;
+	height: 100%;
+	max-height: 1200px;*/
+	height: auto;
+	background: url(files/banner-slider.png) no-repeat center center;
+	background-size: 100%;
+
+}
